@@ -19,13 +19,22 @@
     <!--Navigation Bar-->
     <header class="shadow-xl sticky top-0">
         <div class="container">
-            <nav class=" flex flex-row w-full justify-between h-full items-center py-2">
-                <a href="dashboard.html" title="Log out">
-                    <img src="assets/logo/logo.png" class="w-full" alt="">
+            <nav class="bg-white flex flex-row w-full justify-between items-center">
+                <a href="dashboard.html">
+                    <img src="assets/logo/logo.png" alt="">
                 </a>
-                <a href="#" class="text-green-500 text-xl">
-                  <i class="fas fa-sign-out-alt"></i>
-              </a>
+                <ul class="flex flex-row">
+                    <li class="ml-10">
+                        <a href="#" class="text-green-500 text-2xl">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="ml-10">
+                        <a href="#" class="text-green-500 text-2xl">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
         
@@ -97,7 +106,7 @@
         <div class="flex flex-row justify-between">
             <h3>Attendance</h3>
             <!--TABLE KEYS-->
-            <ul class="hidden md:block flex flex-row">
+            <ul class="flex flex-row">
                 <li class="flex flex-row items-center ml-1 md:ml-10"><span class="block w-4 h-4 bg-green-700 mr-2"></span><span class="capitalize">present</span></li>
                 <li class="flex flex-row items-center ml-1 md:ml-10"><span class="block w-4 h-4 bg-red-700 mr-2"></span><span class="capitalize">absent</span></li>
                 <li class="flex flex-row items-center ml-1 md:ml-10"><span class="block w-4 h-4 bg-blue-700 mr-2"></span><span class="capitalize">holiday</span></li>
@@ -112,18 +121,18 @@
                 <th scope="col"></th>
                 <th scope="col" colspan="5" class="text-center">Week </th>
                 
-                <th scope="col" class="text-center"></th>
-                <th scope="col" class="text-center"></th>
+                <th scope="col" class="text-center">Percentage %</th>
+                <th scope="col" class="text-center">Allawee</th>
               </tr>
                 <tr >
                   <th scope="col">Month</th>
-                  <th scope="col" class="text-center">1</th>
-                  <th scope="col" class="text-center"> 2</th>
-                  <th scope="col" class="text-center"> 3</th>
-                  <th scope="col" class="text-center"> 4</th>
-                  <th scope="col" class="text-center"> 5</th>
-                  <th scope="col" class="text-center"> %</th>
-                  <th scope="col" class="text-center">N</th>
+                  <th scope="col" class="text-center">Week 1</th>
+                  <th scope="col" class="text-center">Week 2</th>
+                  <th scope="col" class="text-center">Week 3</th>
+                  <th scope="col" class="text-center">Week 4</th>
+                  <th scope="col" class="text-center">Week 5</th>
+                  <th scope="col" class="text-center">Percentage %</th>
+                  <th scope="col" class="text-center">Allawee</th>
                 </tr>
               </thead>
               <tbody>
