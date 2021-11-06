@@ -28,10 +28,10 @@
     <header class="shadow-xl bg-white sticky top-0 z-50 py-2">
         <div class="container">
             <nav class="flex flex-row justify-between items-center">
-                <a class="block sm:w-3/6 md:w-2/6" href="dashboard.html">
+                <a class="block sm:w-3/6 md:w-1/6" href="dashboard.html">
                     <img src="assets/logo/logo.png"  alt="" class="w-full">
                 </a>
-                <a  href="#" class="text-xl lg:text-2xl text-green-500 hover:text-green-500 active:text-green-500">
+                <a  href="#" class="text-xl text-green-500 hover:text-green-500 active:text-green-500">
                   <i class="fas fa-sign-out-alt"></i>
               </a>
             </nav>
@@ -41,9 +41,9 @@
     <div class="h-8"></div>
     <!--User Dashboard-->
     <div class="container">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+        <div class="flex flex-col md:flex-row md:items-center">
             <!--Profile Picture-->
-            <div class="w-3/4 mx-auto md:mx-0 md:w-4/12 lg:w-3/12">
+            <div class="w-3/4 mx-auto md:w-3/12">
               <div class="">
                 <div class="relative w-full">
                   <img src="assets/png/user.jpeg" class="w-full rounded" alt="user picture"/>
@@ -57,8 +57,8 @@
             <!--Spacer-->
             <div class="h-16 md:hidden"></div>
             <!--Details-->
-            <div class="w-full md:w-8/12 lg:w-9/12">
-                <div class="text-sm lg:text-lg ">
+            <div class="w-full md:w-9/12">
+                <div class="text-sm lg:text-md">
                     
                     <div class="flex justify-between mb-2 md:mb-4">
                         <span class="block w-2/6 md:w-1/6 font-semibold  tracking-wide text-right p-1 ">Name:</span> 
@@ -103,26 +103,20 @@
     <!--ATTENDANCE SHEET (READ ONLY)-->
     <div class="container">
         <!--TABLE-->
-        <table class="table table-sm table-hover text-sm md:text-md lg:text-lg">
+        <table class="table table-sm table-hover text-sm">
             <thead>
                 <tr  class="border-b h-10 align-middle border-black bg-gray-50 shadow-sm">
-                  <td>
+                  <td colspan="5">
                     <div class="text-md w-5/6 tracking-wide font-semibold">Attendance Sheet</div>
                   </td>
-                  <td colspan="6">
-                    <div class="flex flex-row justify-end items-center">
-                      <div class="flex flex-row justify-center items-center text-right mr-5">
-                        <span class="block w-4 h-4 bg-green-700 mr-2"></span><span class="capitalize hidden md:inline">present</span>
-                      </div>
-                      <div class="flex flex-row justify-center items-center text-right mr-5">
-                        <span class="block w-4 h-4 bg-yellow-700 mr-2"></span><span class="capitalize hidden md:inline">late</span>
-                      </div>
-                      <div class="flex flex-row justify-center items-center">
-                        <span class="block w-4 h-4 bg-red-700 mr-2"></span><span class="capitalize hidden md:inline">absent</span>
-                      </div>
-                    </div>  
-                  </td>  
+                  <td>
+                    <div class="flex flex-row justify-center items-center text-right"><span class="block w-4 h-4 bg-green-700 mr-2"></span><span class="capitalize hidden">present</span></div>
+                  </td>
+                  <td>
+                    <div class="flex flex-row justify-center items-center"><span class="block w-4 h-4 bg-red-700 mr-2"></span><span class="capitalize hidden">absent</span></div>
+                  </td>
                 </tr>
+               
                 <tr class="h-8">
                   <th scope="col" class="border-b border-black">Month<span class="inline-block border-l border-black ml-2 pl-2">Week</span> </th>
                   <th scope="col" class="text-center">1</th>

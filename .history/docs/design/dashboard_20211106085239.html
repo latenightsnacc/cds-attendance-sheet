@@ -31,7 +31,7 @@
                 <a class="block sm:w-3/6 md:w-2/6" href="dashboard.html">
                     <img src="assets/logo/logo.png"  alt="" class="w-full">
                 </a>
-                <a  href="#" class="text-xl lg:text-2xl text-green-500 hover:text-green-500 active:text-green-500">
+                <a  href="#" class="text-xl text-green-500 hover:text-green-500 active:text-green-500">
                   <i class="fas fa-sign-out-alt"></i>
               </a>
             </nav>
@@ -103,26 +103,24 @@
     <!--ATTENDANCE SHEET (READ ONLY)-->
     <div class="container">
         <!--TABLE-->
-        <table class="table table-sm table-hover text-sm md:text-md lg:text-lg">
+        <table class="table table-sm table-hover text-sm md:text-md lg:text-xl">
             <thead>
                 <tr  class="border-b h-10 align-middle border-black bg-gray-50 shadow-sm">
-                  <td>
+                  <td colspan="5">
                     <div class="text-md w-5/6 tracking-wide font-semibold">Attendance Sheet</div>
                   </td>
-                  <td colspan="6">
-                    <div class="flex flex-row justify-end items-center">
-                      <div class="flex flex-row justify-center items-center text-right mr-5">
-                        <span class="block w-4 h-4 bg-green-700 mr-2"></span><span class="capitalize hidden md:inline">present</span>
-                      </div>
-                      <div class="flex flex-row justify-center items-center text-right mr-5">
-                        <span class="block w-4 h-4 bg-yellow-700 mr-2"></span><span class="capitalize hidden md:inline">late</span>
-                      </div>
-                      <div class="flex flex-row justify-center items-center">
-                        <span class="block w-4 h-4 bg-red-700 mr-2"></span><span class="capitalize hidden md:inline">absent</span>
-                      </div>
-                    </div>  
-                  </td>  
+                  <td colspan="">
+                    <div class="flex flex-row items-center">
+                      <div class="flex flex-row justify-center items-center text-right"><span class="block w-4 h-4 bg-green-700 mr-2"></span><span class="capitalize hidden md:inline">present</span></div>
+                      <div class="flex flex-row justify-center items-center text-right"><span class="block w-4 h-4 bg-yellow-700 mr-2"></span><span class="capitalize hidden md:inline">late</span></div>
+                      <div class="flex flex-row justify-center items-center"><span class="block w-4 h-4 bg-red-700 mr-2"></span><span class="capitalize hidden md:inline">absent</span></div>
+
+                    </div>
+                    
+                  </td>
+                  
                 </tr>
+               
                 <tr class="h-8">
                   <th scope="col" class="border-b border-black">Month<span class="inline-block border-l border-black ml-2 pl-2">Week</span> </th>
                   <th scope="col" class="text-center">1</th>
