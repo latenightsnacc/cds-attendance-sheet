@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind Css-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Font Awesome 5 CDN-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!--PAGE TITLE-->
+    <title>CDS Attendance | NYSC</title>
+    <style>
+      .profile-img {
+        width: 180px;
+      }
+      *{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!--Navigation Bar-->
+    <header class="shadow-xl bg-white sticky top-0 z-50 py-2">
+        <div class="container">
+            <nav class="flex flex-row justify-between items-center">
+                <a href="dashboard.html">
+                    <img src="assets/logo/logo.png"  alt="" class="w-56">
+                </a>
+                <a  href="#" class="text-green-500 hover:text-green-500 active:text-green-500">
+                  <i class="fas fa-sign-out-alt"></i>
+              </a>
+            </nav>
+        </div>
+    </header>
+    <!--Spacer-->
+    <div class="h-8"></div>
+    <!--User Dashboard-->
+    <div class="container">
+        <div class="flex flex-col md:flex-row md:items-center">
+            <!--Profile Picture-->
+            <div class="">
+              <div class="w-3/4 mx-auto">
+                <div class="relative w-full">
+                  <img src="assets/png/user.jpeg" class="w-full rounded" alt="user picture"/>
+                  <div class="absolute -bottom-7">
+                    <span class="block w-56 text-center tracking-wide font-semibold py-2 bg-green-100 rounded text-xs uppercase">Member</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--Spacer-->
+            <div class="h-4 md:hidden"></div>
+            <!--Details-->
+            <div class="w-full">
+                <div class="mt-4">
+                    
+                    <div class="text-sm flex justify-between items-center mb-2">
+                        <span class="w-28 font-semibold tracking-wide text-right ">Name:</span> 
+                        <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1">Deborah Onyebuchi Olisa Egonu</span>
+                    </div>
+                    <div class="text-sm flex justify-between items-center mb-2">
+                        <span class="w-28 font-semibold tracking-wide text-right ">Callup No:</span> 
+                        <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1">NYSC/FRN/2021/700204</span>
+                    </div>
+                    <div class="text-sm flex justify-between items-center mb-2">
+                        <span class="w-28 font-semibold tracking-wide text-right ">Batch:</span> 
+                        <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1">A, 2021 - Stream 1</span>
+                    </div>
+                    <div class="text-sm flex justify-betwe items-centeren mb-2">
+                      <span class="w-28 font-semibold tracking-wide text-right ">Statecode:</span> 
+                      <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1 uppercase">EN/21A/0324</span>
+                  </div>
+                    <div class="text-sm flex justify-between items-center mb-2">
+                        <span class="w-28 font-semibold tracking-wide text-right capitalize ">State:</span> 
+                        <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1 capitalize">Enugu</span>
+                    </div>
+                    <div class="text-sm flex justify-betwe items-center mb-2">
+                      <span class="w-28 font-semibold tracking-wide text-right uppercase">L.G.A:</span> 
+                      <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1 capitalize">Enugu north</span>
+                    </div>
+                    <div class="text-sm flex justify-betwe items-center mb-2">
+                      <span class="w-28 font-semibold tracking-wide text-right uppercase">p.p.a:</span> 
+                      <span class="w-full font-medium  text-green-600 text-left tracking-wide bg-gray-50 rounded p-1 capitalize">Digital Dreams Ltd</span>
+                    </div>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--Spacer-->
+    <div class="h-8"></div>
+    <!--CDS GROUP-->
+    <div class="container ">
+        <div class=" text-sm flex flex-row justify-start py-2">
+            <span class="capitalize w-28 text-right tracking-wide font-semibold pl-1">C.D.S:</span> 
+            <span class="capitalize  bg-gray-50 text-left text-green-500 tracking-wide font-semibold pl-1">Information Communication Technology</span>
+        </div>
+    </div>
+    <!--Spacer-->
+    <div class="h-8"></div>
+    <!--ATTENDANCE SHEET (READ ONLY)-->
+    <div class="container">
+        <!--TITLE AND KEYS-->
+        <div class="flex flex-row justify-between items-center">
+            <div class="text-md w-1/2 tracking-wide font-semibold">Attendance Sheet</div>
+            <!--TABLE KEYS-->
+            <ul class="w-1/2 flex flex-row text-xs justify-end items-center">
+                <li class="flex flex-row items-center "><span class="block w-4 h-4 bg-green-700 mr-2"></span><span class="capitalize hidden">present</span></li>
+                <li class="flex flex-row items-center"><span class="block w-4 h-4 bg-red-700 mr-2"></span><span class="capitalize hidden">absent</span></li>
+                
+            </ul>
+        </div>
+        <!--Spacer-->
+        <div class="h-4 md:hidden"></div>
+        <!--TABLE-->
+        <table class="table table-sm table-hover">
+            <thead>
+
+              
+                <tr >
+                  <th scope="col" rowspan="2">Month</th>
+                  <th scope="col" colspan="5">Week</th>
+                  
+                </tr>
+                <tr >
+                  
+                  <th scope="col" class="text-center">1</th>
+                  <th scope="col" class="text-center"> 2</th>
+                  <th scope="col" class="text-center"> 3</th>
+                  <th scope="col" class="text-center"> 4</th>
+                  <th scope="col" class="text-center"> 5</th>
+                  <th scope="col" class="text-center"> %</th>
+                  <th scope="col" class="text-center">N</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-green-100">
+                  <th scope="row" class="text-left capitalize">January</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td> 
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">February</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left">March</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left">April</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">may</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">June</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">july</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">august</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">september</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">october</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">november</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-left capitalize">december</th>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <span class="block text-center">0</span>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="flex flex-row h-8 items-center justify-center">
+                        <input type="checkbox" class="h-5 w-5 checked:bg-green-700 checked:border-2 checked:border-green-700" />
+                      </div>
+                  </td>  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Spacer-->
+    <div class="h-8"></div>
+    <!--Footer-->
+    <footer class="bg-green-500 h-10  flex flex-row items-center justify-center">
+        <p class="text-white text-center pt-3">Built with &heartsuit; by <a href="#" class="text-white font-semibold">EN/21A/0324</a></p>
+    </footer>
+</body>
+</html>
